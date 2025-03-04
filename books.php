@@ -32,8 +32,8 @@ print "<p>The first chapter of my second book is <i>{$books['PHP Advanced VQP'][
 print "<p>The fourth chapter of my fourth book is <i>{$books['PHP and MySQL VQP'][4]}</i>.</p>";
 
 // See what happens with foreach:
-foreach ($books as $key => $chapters) {
-	print "<p>$key:";
+foreach ($books as $title => $chapters) {
+	print "<p>$title:";
 	foreach ($chapters as $number => $chapter) {
 		print "<br/>Chapter $number is $chapter";
 	}
